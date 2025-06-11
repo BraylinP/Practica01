@@ -1,9 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Footer from './components/Footer'
 import Navbar from './components/NavBar';
 import Home from './pages/Home';
 import Quizz from './pages/Quizz';
 import Lista from './pages/Lista';
-import Detalle from './pages/detalle';
+import Detalle from './pages/Detalle';
 import Combos from './pages/Combos';
 import Factura from './pages/Factura';
 
@@ -19,7 +20,8 @@ const App = () => {
         <Route path="/Combos" element={<Combos />} />
         <Route path="/Factura" element={<Factura />} />
       </Routes>
-    </Router>
+      <Footer/>
+    </Router>   
   );
 };
 

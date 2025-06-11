@@ -23,7 +23,7 @@ const Factura: React.FC = () => {
       const timeout = setTimeout(() => {
         localStorage.removeItem("pedido");
         navigate("/combos");
-      }, 10000); // 10 segundos
+      }, 10000); 
 
       return () => clearTimeout(timeout);
     } else {
@@ -87,7 +87,7 @@ const Factura: React.FC = () => {
         <p className="text-lg font-bold"><strong>Total:</strong> ¢{total}</p>
       </div>
 
-      <p className="text-sm text-center mt-4">Redirigiendo automáticamente a combos en 10 segundos...</p>
+      <p className="text-sm text-center mt-4">Redirigiendo automáticamente al menú de soda en 10 segundos...</p>
     </div>
   );
 };
